@@ -1,0 +1,11 @@
+<div class="container">
+<ul class="list-group my-5">
+<% @restaurants.each do |restaurant| %>
+  <li class="list-group-item rounded shadow-sm p-3 mb-5 bg-white rounded">
+    <h2><%= restaurant.name.upcase %><h2>
+    <p><%= restaurant.category %></p>
+    <%= link_to 'See details', restaurant_path(restaurant), :class=>'btn btn-primary' %>
+  </li>
+<% end %>
+</ul>
+</div>

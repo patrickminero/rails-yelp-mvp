@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light d-flex">
+      <a class="navbar-brand" href="/restaurants">Yelp MVP</a>
+      <%= link_to "Create Restaurant", new_restaurant_path(@restaurant), class: "btn btn-primary"%>
+    </nav>
     <%= yield %>
   </body>
 </html>
